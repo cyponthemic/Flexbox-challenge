@@ -14,7 +14,12 @@ $(document).ready(function() {
 						touchDevices: false,
 						trigger: 'hover'
 						});
-            
+            if (window.matchMedia("(min-width: 600px)").matches) {
+				$( "i" ).tooltipster('enable');
+				} else {
+					$( "i" ).tooltipster('disable');
+					}
+
 			});
 			
 $(window).resize(function(){

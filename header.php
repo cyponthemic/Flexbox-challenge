@@ -1,3 +1,4 @@
+<?php require_once('function.php'); ?>
 <html>
 	<head>
 		<title>Advantage of flexbox - Code Challenge</title>
@@ -10,25 +11,17 @@
 		<div class="wrapper">
 			<nav class="main_nav">
 				<ul class="main_menu">
-					<li><i class="fi-layout" title="Challenge"></i><br>
+					<li><a href="index.php">
+						<i class="fi-layout <?php if($page=='index.php'){echo 'on';}?>" title="Challenge"></i></a><br>
 						<span class="nav_button">Challenge</span>
 					</li>
-								<li><i class="fi-trophy" title="About"></i><br>
+								<li><a href="about.php">
+									<i class="fi-trophy <?php if($page=='about.php'){echo 'on';}?>" title="About"></i></a><br>
 									<span class="nav_button">About</span>
 								</li>
-											<li><i class="fi-mail" title="Contact"></i><br>
+											<li><a href="contact.php">
+												<i class="fi-mail <?php if($page=='contact.php'){echo 'on';}?>" title="Contact"></i></a><br>
 												<span class="nav_button">Contact</span>
 											</li>
 				</ul>
 			</nav>
-			<div class="main_content">
-				Test
-			</div>
-			
-		</div>
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/script.js"></script>
-<script src="tooltip/js/jquery.tooltipster.min.js"></script>
-</body>
-</html>

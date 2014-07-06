@@ -58,6 +58,11 @@ font-size: 36px;
 margin-left: auto;
 }
 
+.on{
+	color:rgba(210,210,210,0.3) !important;
+}
+
+
 .main_content{
 	width: 950px;
 }
