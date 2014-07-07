@@ -11,17 +11,22 @@
 		<div class="wrapper">
 			<nav class="main_nav">
 				<ul class="main_menu">
-					<li><a href="index.php">
-						<i class="fi-layout <?php if($page=='index.php'){echo 'on';}?>" title="Challenge"></i></a><br>
-						<span class="nav_button">Challenge</span>
+					<li><a href="#title">
+						<i class="fi-layout" title="Project"></i></a><br>
+						<span class="nav_button">Project</span>
 					</li>
-								<li><a href="about.php">
-									<i class="fi-trophy <?php if($page=='about.php'){echo 'on';}?>" title="About"></i></a><br>
-									<span class="nav_button">About</span>
+								<li><a href="#music">
+									<i class="fi-music" title="Music"></i></a><br>
+									<span class="nav_button">Music</span>
 								</li>
-											<li><a href="contact.php">
-												<i class="fi-mail <?php if($page=='contact.php'){echo 'on';}?>" title="Contact"></i></a><br>
-												<span class="nav_button">Contact</span>
+											<li><a href="#movies">
+												<i class="fi-video" title="Movies"></i></a><br>
+												<span class="nav_button">Movies</span>
 											</li>
+												
+												<li><a href="#footer">
+													<i class="fi-mail" title="Contact"></i></a><br>
+														<span class="nav_button">Contact</span>
+												</li>
 				</ul>
 			</nav>

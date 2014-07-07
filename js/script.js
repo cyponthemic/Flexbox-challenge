@@ -1,3 +1,34 @@
+/* ========   Scroll */
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+/* ========   Trailer */
+
+$( ".description a" ).on( "click", function( event ) {
+   $( event.target ).parent( "div" ).toggleClass( "hidden" );
+   $( ".hidden" ).next("div").removeClass('notrailer');
+});
+
+$( ".trailer a" ).on( "click", function( event ) {
+   $( event.target ).parent( "div" ).toggleClass( "notrailer" );
+   $( ".notrailer" ).prev("div").removeClass('hidden');
+});
+
+
+
+/* ========   TOOL TIP */
+
 
 $(document).ready(function() {
             
