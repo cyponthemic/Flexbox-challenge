@@ -1,7 +1,10 @@
-<?php require_once('function.php'); ?>
+
 <html>
 	<head>
-		<title>Advantage of flexbox - Code Challenge</title>
+		<title> Flexbox - Code Challenge</title>
+		<link rel="icon" 
+					type="image/png" 
+						href="img/note.png">
 		<link rel="stylesheet" href="css/normalize.css" type="text/css">
 		<link rel="stylesheet" href="css/style.css" type="text/css">
 		<link rel="stylesheet" href="icons/foundation-icons.css" type="text/css">

@@ -4,9 +4,8 @@
 		<div class="title">
 			<h1>Welcome to my Flexbox Project</h1>
 			<h2>This my entry for the code challenge contest on teamtreehouse.com<br><br>
-				I discovered some awesome features thnaks to this challenge. For example "self-align" will save me a lot a time for the future when I'll have to deal with vertical alignement.<Br><br>
-				However, I found the Foundation framework easier to use, especially when your content is based on php loops.
-			</h2>
+				I discovered some awesome features thanks to this challenge. For example "self-align" will save me a lot a time for the future when I'll have to deal with vertical alignement.<Br><br>
+				However, I still prefer the Foundation 5 framework.</h2>
 		</div>
 		
 		<div id="music" class="music">
@@ -41,7 +40,7 @@
 			<h1>Movies</h1>
 			<div class="film">
 				<div class="poster">
-					<img src="film/enemy.jpg" height="300">
+					<img src="img/enemy.jpg" height="300">
 				</div>
 				<div class="description">
 					<h3>Enemy</h3>
@@ -60,7 +59,7 @@ Enemy earned five Canadian Screen Awards; Best Director for Villeneuve, and Best
 			
 			<div class="film">
 				<div class="poster">
-					<img src="film/fruitvale.jpg" height="300">
+					<img src="img/fruitvale.jpg" height="300">
 				</div>
 				<div class="description">
 					<h3>Fruitvale Station</h3>
@@ -77,7 +76,7 @@ Enemy earned five Canadian Screen Awards; Best Director for Villeneuve, and Best
 			
 			<div class="film">
 				<div class="poster">
-					<img src="film/moonrise.jpg" height="300px">
+					<img src="img/moonrise.jpg" height="300px">
 				</div>
 				<div class="description">
 					<h3>Moonrise Kingdom</h3>
@@ -98,17 +97,21 @@ Filming took place in Rhode Island from April until June 29, 2011. Worldwide rig
 			<h1>Thanks for viewing my project</h1>
 			<h2>If you want to know more about the code<br>
 				Checkout my repo<br>
-				<i class="fi-social-github"></i>
+				<a href="https://github.com/cyponthemic/Flexbox-challenge"><i class="fi-social-github"></i></a>
 			</h2>
 		
 			<h1>Keep in touch
 			</h1>
 				<h2>alex.chavet@gmail.com<br>
 				
-				<i class="fi-mail"></i><br>
+				<a href="mailto:alex.chavet@gmail.com">
+				<i class="fi-mail"></i></a><br>
+				
 				cyponthemic<br>
+				
+				<a href="http://teamtreehouse.com/alexchavet">
 				<i class="fi-social-treehouse"></i><br>
-				<img class="alex" src="film/alex.jpg">
+				<img class="alex" src="img/alex.jpg">
 			</h2>
 			
 		</div>

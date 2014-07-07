@@ -23,7 +23,7 @@ h1 {
 	/* -----Flexbox */
 	display: -webkit-flex;
 	display: flex;
-	webkit-flex-direction: row;
+	-webkit-flex-direction: row;
 	flex-direction: row;
 }
 nav{
@@ -35,35 +35,36 @@ nav{
 	/* -----Flexbox */
 	display: -webkit-flex;
 	display: flex;
-	webkit-flex-direction: column;
+	-webkit-flex-direction: column;
 	flex-direction: column;
 	
 }
 
 nav ul {
-	height: 150px;
+	height: 300px;
 	margin-top:30px;
 	padding: 0px;
 	width: 75px;
 	/* -----Flexbox */
-	
 	display: -webkit-flex;
 	display: flex;
 	
-	webkit-flex-direction: column;
+	-webkit-flex-direction: column;
 	flex-direction: column;
 	
 	align-self:center;
-	webkit-align-self:center;
+	-webkit-align-self:center;
 }
 nav li{
 	text-align: center;
-	webkit-flex-grow:1;
+	/* -----Flexbox */
+	-webkit-flex-grow:1;
 	flex-grow:1;
 }
+
 i {
-color:rgba(210,210,210,0.8);
-font-size: 36px;
+	color:rgba(210,210,210,0.8);
+	font-size: 36px;
 }
 
 .on{
@@ -73,27 +74,25 @@ font-size: 36px;
 .main_content {
 	padding-left: 75px;
 	width: 100%;
-	/* margin-top: 30px; */
 	min-height: 100%;
+	/* -----Flexbox */
 	display: -webkit-flex;
 	display: flex;
-	webkit-flex-direction: column;
+	
+	-webkit-flex-direction: column;
 	flex-direction: column;
+	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
-	webkit-flex-wrap: wrap;
 	align-content: flex-start;
-	webkit-align-content: flex-start;
+	-webkit-align-content: flex-start;
 	
 }
 .title {
 	width: 100%;
 	margin: 0px auto auto auto;
 	background-color: #c55529;
-	/* height: 300px; */
-}
-.footer {
-	background-color: #00a0d0;
-}
+	}
+	
 .title h1{
 	display: block;
 	width: 70%;
@@ -118,11 +117,14 @@ font-size: 36px;
 .music {
 	display: -webkit-flex;
 	display: flex;
-	justify-content: center;
-	webkit-flex-direction: row;
+	/* -----Flexbox */
+	-webkit-flex-direction: row;
 	flex-direction: row;
+	-webkit-justify-content: space-between;
 	justify-content: space-between;
 	padding: 20px 20px;
+	-webkit-flex-wrap: wrap;
+	-webkit-align-items: flex-start;
 	flex-wrap: wrap;
 	align-items: flex-start;
 }
@@ -139,21 +141,23 @@ font-size: 36px;
 	height: 300px;
 	margin-bottom: 20px;
 	border: 1px black solid;
-	/* margin: auto; */
+	/* -----Flexbox */
+	display: -webkit-flex;
+	-webkit-flex-direction:column;
 	display: flex;
 	flex-direction:column;
 }
 .movies {
 	display: -webkit-flex;
 	display: flex;
-	webkit-flex-direction: column;
+	-webkit-flex-direction: column;
 	flex-direction: column;
 	padding: 20px 20px;
 }
 .film {
 	display: flex;
-	display: webkit-flex;
-	webkit-flex-direction: row;
+	display:-webkit-flex;
+	-webkit-flex-direction: row;
 	flex-direction: row;
 	max-width: 1000px;
 	justify-content: space-between;
@@ -194,6 +198,19 @@ font-size: 36px;
 	position: relative;
 }
 
+.footer {
+	background-color: #00a0d0;
+	padding-bottom: 50px
+	}
+
+#footer a >i {
+	font-size: 50px;
+}
+
+#footer a:hover >i {
+	color: white;
+}
+
 .alex {
 border-radius: 50%;
 width: 100px;
@@ -215,7 +232,7 @@ margin: 10px;
 	flex-wrap:wrap;
 	display: -webkit-flex;
 	display: flex;
-	webkit-flex-direction: column;
+	-webkit-flex-direction: column;
 	flex-direction: column;
 	}
    nav{
@@ -227,7 +244,7 @@ margin: 10px;
 	/* -----Flexbox */
 	display: -webkit-flex;
 	display: flex;
-	webkit-flex-direction: row;
+	-webkit-flex-direction: row;
 	flex-direction: row;
     }
     
@@ -238,9 +255,9 @@ margin: 10px;
 	/* -----Flexbox */
 	display: -webkit-flex;
 	display: flex;
-	webkit-flex-direction: row;
+	-webkit-flex-direction: row;
 	flex-direction: row;
-	
+	-webkit-align-self:center;
 	align-self:center;
 	
     }
@@ -256,10 +273,10 @@ margin: 10px;
     .music {
 	display: -webkit-flex;
 	display: flex;
+	-webkit-justify-content: center;
 	justify-content: center;
-	webkit-flex-direction: column;
+	-webkit-flex-direction: column;
 	flex-direction: column;
-	justify-content: space-between;
 	padding: 20px 20px;
 }
 
@@ -271,8 +288,8 @@ margin: 10px;
 }
 .film {
 display: flex;
-	display: webkit-flex;
-	webkit-flex-direction: column;
+	display:-webkit-flex;
+	-webkit-flex-direction: column;
 	flex-direction: column;
 
 }
@@ -283,6 +300,11 @@ display: flex;
 	width: 100%;
 	padding-top: 20px;
 }
+
+#footer a >i {
+	font-size: 70px;
+}
+
 #footer,#music,#movies{
 	padding-top: 75px;
 }
